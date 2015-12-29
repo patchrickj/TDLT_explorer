@@ -122,14 +122,14 @@ require([
 
  	var symbolSize = [16, 16]
 
-  var climbingSymbol = new PictureMarkerSymbol('public\\img\\symbols\\climbing.png', symbolSize[0], symbolSize[1]);
-	var buildingSymbol = new PictureMarkerSymbol('public\\img\\symbols\\building.png', symbolSize[0], symbolSize[1]);
-	var parkingSymbol = new PictureMarkerSymbol('public\\img\\symbols\\parking.png', symbolSize[0], symbolSize[1]);
-	var peakSymbol = new PictureMarkerSymbol('public\\img\\symbols\\peak.png', symbolSize[0], symbolSize[1]);
-	var picnicSymbol = new PictureMarkerSymbol('public\\img\\symbols\\picnic.png', symbolSize[0], symbolSize[1]);
-	var poiSymbol = new PictureMarkerSymbol('public\\img\\symbols\\poi.png', symbolSize[0], symbolSize[1]);
-	var trailheadSymbol = new PictureMarkerSymbol('public\\img\\symbols\\trailhead.png', symbolSize[0], symbolSize[1]);
-	var viewpointSymbol = new PictureMarkerSymbol('public\\img\\symbols\\viewpoint.png', symbolSize[0], symbolSize[1]);
+  var climbingSymbol = new PictureMarkerSymbol('public/img/symbols/climbing.png', symbolSize[0], symbolSize[1]);
+	var buildingSymbol = new PictureMarkerSymbol('public/img/symbols/building.png', symbolSize[0], symbolSize[1]);
+	var parkingSymbol = new PictureMarkerSymbol('public/img/symbols/parking.png', symbolSize[0], symbolSize[1]);
+	var peakSymbol = new PictureMarkerSymbol('public/img/symbols/peak.png', symbolSize[0], symbolSize[1]);
+	var picnicSymbol = new PictureMarkerSymbol('public/img/symbols/picnic.png', symbolSize[0], symbolSize[1]);
+	var poiSymbol = new PictureMarkerSymbol('public/img/symbols/poi.png', symbolSize[0], symbolSize[1]);
+	var trailheadSymbol = new PictureMarkerSymbol('public/img/symbols/trailhead.png', symbolSize[0], symbolSize[1]);
+	var viewpointSymbol = new PictureMarkerSymbol('public/img/symbols/viewpoint.png', symbolSize[0], symbolSize[1]);
 
 	var poiRenderer = new UniqueValueRenderer(defaultSymbol, "Type");
 	poiRenderer.addValue({
