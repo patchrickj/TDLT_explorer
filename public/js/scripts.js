@@ -442,7 +442,7 @@ require([
   	var hikeInfo = "From chapparal meadows to old growth pine forests to high alpine lakes, the Land Trust protects and provides access to miles of trails in the diverse landscapes of the Northern Sierra. As well, portions of the Pacfic Crest Trail cross TDLT proteted lands. "
   	map.infoWindow.setContent(hikeInfo);
 		map.infoWindow.show(new Point([-120.325, 39.48]))
-		map.centerAndZoom([-120.40, 39.38], 10);
+		map.centerAndZoom([-120.299, 39.372], 10);
   	registry.byId("trailsCheckBox").set("checked", true);
   	map.getLayer("tdltTrails").setRenderer(newRenderer);
   	map.getLayer("tdltTrails").redraw();
@@ -484,7 +484,7 @@ require([
   	var bikeInfo = "The Land Trust maintains over 40 miles of mountain bike trails throughout Royal Gorge, Waddle Ranch and the Donner Lake Rim Trail. As well, it provides access to the popular Hole-In-The-Ground trail through Castle Valley."
   	map.infoWindow.setContent(bikeInfo);
 		map.infoWindow.show(new Point([-120.26, 39.33]));
-  	map.centerAndZoom([-120.30, 39.34], 11);
+  	map.centerAndZoom([-120.24, 39.34], 11);
 
   	registry.byId("trailsCheckBox").set("checked", true);
   	map.getLayer("tdltTrails").setRenderer(bikeRenderer);
