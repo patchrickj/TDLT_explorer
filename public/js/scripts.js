@@ -398,7 +398,7 @@ require([
 				}
 			});
 		} else if (radioValue === "trails" && trailVis) {
-			query.geometry = pointToExtent(map, event.mapPoint, 1);
+			query.geometry = pointToExtent(map, event.mapPoint, 2);
 			//to ensure we only select one trail, we first check how many are selected. If more than
 			//one are selected we run a new query, selecting only one from the group selected off the click
 			tdltTrails.queryFeatures(query, function (returnedFeatures) {
