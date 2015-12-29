@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TDLT Interactive Map</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.15/dijit/themes/tundra/tundra.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.15/dojo/resources/dojo.css">
+    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/3.15/esri/css/esri.css">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <script src="https://js.arcgis.com/3.15"></script>
+    <script>var dojoConfig = { parseOnLoad:true };</script>  
+    <script src="/js/scripts.js"></script>
+  </head>
+  <body class="tundra">
+    <div id="mapDiv">
+      <div class="title1"><img src="/img/TDLT_Logo2.jpg" alt="TDLT Logo">Truckee Donner Land Trust Explorer Map</div>
+      <div id="leftMenus">
+        <div class="menu">
+          <div class="menu-title">Recreation Finder</div>
+          <button data-dojo-type="dijit/form/Button" id="hikeButton" type="button">Hiking Trails</button>
+          <button data-dojo-type="dijit/form/Button" id="bikeButton" type="button">Mountain Biking Trails</button>
+          <button data-dojo-type="dijit/form/Button" id="horseButton" type="button">Horseback Riding Trails</button>
+          <button data-dojo-type="dijit/form/Button" id="climbButton" type="button">Rock Climbing</button>
+          <button data-dojo-type="dijit/form/Button" id="donnerButton" type="button">Historic Donner Summit</button>
+          <button data-dojo-type="dijit/form/Button" id="resetButton" type="button">Reset Map</button>
+        </div>
+        <form class="radioQuery menu">
+          <div class="menu-title">Map Query</div>
+          <div>
+            <input id="radio1" type="radio" data-dojo-type="dijit/form/RadioButton" name="queryToggle" value="lands" checked>
+            <label for="radio1">Lands</label>
+          </div>
+          <div>
+            <input id="radio2" type="radio"  data-dojo-type="dijit/form/RadioButton" name="queryToggle" value="trails">
+            <label for="radio2">Trails</label>
+          </div>
+        </form>        
+      </div>
+      <div id="rightMenus">
+        <form class="menu">
+          <div class="menu-title">Legend</div>
+
+          <div>
+            <input type="checkbox" id="poiCheckBox" checked data-dojo-type="dijit/form/CheckBox">
+            <label for="poiCheckBox">Locations</label>
+            <div id="poiLegend"></div>
+          </div>
+
+
+          <div>
+            <input type="checkbox" id="trailsCheckBox" checked data-dojo-type="dijit/form/CheckBox">
+            <label for="trailsCheckBox">Trails</label>
+            <div id="trailsLegend"></div>
+          </div>
+          <div>
+            <input type="checkbox" id="landsCheckBox" checked data-dojo-type="dijit/form/CheckBox">
+            <label for="landsCheckBox">Conserved Lands</label>
+            <div id="landsLegend"></div>
+          </div>
+        </form>
+      </div>
+      <div class="tdltAttribution">Map designed and produced by Patrick Johnson. For demonstrative purposes only. Locations are approximate and should not be used for navigational purposes. Trail, conserved land and location data maintained by Truckee Donner Land Trust GIS Analyst Patrick Johnson. Updated 12/28/15.</div>
+    </div>
+  </body>
+</html>
